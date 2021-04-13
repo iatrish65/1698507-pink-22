@@ -1,7 +1,7 @@
 # Личный проект «Пинк» 
 
 * Студент: [Тришин Игорь](https://up.htmlacademy.ru/adaptive/22/user/1698507).
-* Наставник: [Полозова Анастасия](https://up.htmlacademy.ru/adaptive/).
+* Наставник: [Полозова Анастасия](https://htmlacademy.ru/profile/id258631).
 
 ---
 
