@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>проект "Пинк"</title>
+  </head>
+  <body class="page__body">
+    <header class="page-header">
+      <a class="page-header__logo">PINK LOGO
+        <img class="page-header__logo-image" src="img/logo.svg" width="74" height="23" alt="«Пинк»">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--active">
+            <a href="index.html">
+              Главная
+            </a>
+            </li>
+              <li class="site-list__item">
+              <a href="catalog.html">
+                Фотографии
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a>
+                Конкурс
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a href="https://echo.htmlacademy.ru">
+                HTML Academy
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <p class="main-nav slogan__competition">
+            Конкурс нра самое безбашенное путешествие с Пинк
+          </p>
+        </div>
+      </nav>
+    </header>
+    <main class="page-competition">
+      <h1 class="visually-hidden">Страница формы</h1>
+      <section class="user__competition">
+        <div class="user__wrapper">
+          <header class="user__header__competition">
+            <h2 class="visually-hidden">Конкурс</h2>
+            <p class="user__slogan__competition">
+              Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:
+            </p>
+          </header>
+        </div>
+      </section>
+      <section class="user__competition name__info">
+            <h2 class="visually-hidden">Форма ввода данных</h2>
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <ul>
+            <li>
+              <label for="last_name">фамилия:<br></label>
+              <input type="text" id="last_name" name="name__info" placeholder="Укажите фамилию *"><br>
+            </li>
+            <li>
+              <label for="first_name">имя:<br></label>
+              <input type="text" id="first_name" name="name__info" placeholder="Введите ваше имя *"><br>
+            </li>
+            <li>
+              <label for="middle_name">отчество:<br></label>
+              <input type="text" id="middle_name" name="name__info" placeholder="Ну и отчество тоже"><br>
+            </li>
+          </ul>
+        </form>
+      </section>
+      <fieldset>
+            <legend class="filter-heading">с каким приложением путешествовали?</legend>
+            <ul>
+              <li class="filter-option filter-radio">
+                <input class="visually-hidden filter-input-radio filter-input" type="radio" name="application" value="application-ios" id="filter-application-ios">
+                <label for="filter-application-ios">Pink для iOS</label>
+              </li>
+              <li class="filter-option filter-radio">
+                <input class="visually-hidden filter-input-radio filter-input" type="radio" name="application" value="application-android" id="filter-application-android">
+                <label for="filter-application-android">Pink на Android</label>
+              </li>
+              <li class="filter-option filter-radio">
+                <input class="visually-hidden filter-input-radio filter-input" type="radio" name="application" value="application-windows" id="filter-application-windows">
+                <label for="filter-application-windows">Windows Phone</label>
+              </li>
+            </ul>
+      </fieldset>
+      <section class="user__competition contact__info">
+        <h2 class="visually-hidden">Ввод контактной информации</h2>
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <fieldset>
+            <legend class="filter-heading">контактная информация</legend>
+            <ul>
+              <li>
+                <label for="usrtel">номер телефона<br></label>
+                <input type="tel" id="usrtel" name="contact__info" placeholder="Номер, пожалуйста"><br>
+              </li>
+              <li>
+                <label for="mail">адрес почты<br></label>
+                <input type="email" id="mail" name="contact__info" placeholder="Введите почту *"><br>
+              </li>
+            </ul>
+          </fieldset>
+        </form>
+      </section>
+        <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+          <fieldset>
+            <legend class="filter-heading">ваши безбашенные достижения в путешествии</legend>
+            <ul>
+              <li class="filter-option filter-checkbox">
+                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="shark" id="filter-shark" checked>
+                <label for="filter-shark">Сделай селфи с акулой</label>
+              </li>
+              <li class="filter-option filter-checkbox">
+                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="beach" id="filter-beach">
+                <label for="filter-beach">Обгорел на пляже</label>
+              </li>
+              <li class="filter-option filter-checkbox">
+                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="chak" id="filter-chak" checked>
+                <label for="filter-chak">Видел Чак Нориса</label>
+              </li>
+              <li class="filter-option filter-checkbox">
+                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="buy" id="filter-buy">
+                <label for="filter-buy">Накупил сувениров</label>
+              </li>
+              <li class="filter-option filter-checkbox">
+                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="tower" id="filter-tower">
+                <label for="filter-tower">Удержал башню</label>
+              </li>
+              <li class="filter-option filter-checkbox">
+                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="hotel" id="filter-hotel">
+                <label for="filter-hotel">Разгромил отель</label>
+              </li>
+            </ul>
+          </fieldset>
+        </form>
+          <section>
+            <h2 class="visually-hidden">Ввод эмоций от отдыха</h2>
+            <fieldset>
+             <legend class="filter-heading">опишите свои эмоции</legend>
+             <ul>
+                <li>
+                  <label for="msg"></label>
+                  <textarea id="msg" name="user_message" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+                </li>
+             </ul>
+            </fieldset>
+          </section>
+          <section>
+              <h2 class="visually-hidden">Отправка данных</h2>
+              <button class="checkout button" type="submit">отправить форму</button>
+              <p class="footnote">
+              * - обязательные  для заполнения поля
+              </p>
+          </section>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <a class="page-footer__logo">LOGO PINK
+        <img class="page-footer__logo-image" src="img/logo-mobile.svg" width="147" height="40" alt="«Пинк»">
+        </a>
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy">Мы в Твиттере</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="https://www.youtube.com/htmlacademy">Мы в Ютубе</a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+          <b class="copyright__text">Разработано:</b>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
