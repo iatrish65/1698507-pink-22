@@ -1,29 +1,24 @@
-.main-nav__list {
+.reviews__list {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.main-nav__list a {
-  color: @basic-white;
+.reviews__text--info {
+  display: none;
 }
 
-
 @media (min-width: @tablet-width) {
-  .main-nav__wrapper {
+  .reviews__wrapper {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 660px;
     margin: 0 auto;
   }
 
-  .main-nav__toggle {
-    display: none;
-  }
-}
-
 @media (min-width: @desktop-width) {
-  .main-nav__wrapper {
+  .reviews__wrapper {
     width: 1200px;
   }
 }

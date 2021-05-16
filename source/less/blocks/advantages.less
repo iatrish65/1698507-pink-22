@@ -1,0 +1,35 @@
+.advantages__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@media (min-width: @tablet-width) {
+  .advantages__wrapper {
+    //display: flex;
+    //justify-content: space-between;
+    //align-items: center;
+    width: 660px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .advantages__wrapper {
+    width: 1200px;
+  }
+}
+
+.news__wrapper {
+  @media (min-width: @tablet-width) {
+    padding: 0 64px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: auto;
+    max-width: 960px;
+
+  }
+}
