@@ -1,15 +1,22 @@
 .page-header {
+  display: flex;
+  flex-direction: column;
   background-color: fade(@basic-black, 30%);
   color: @basic-white;
-
-
-  //position: relative;
-  //z-index: 100;
-  //min-height: 66px;
-  //width: 100%;
-
-  //@media (min-width: @tablet-width) {
-   // min-height: 110px;
-  //}
 }
 
+.page-header__logo {
+  height: 66px;
+@media (min-width: @tablet-width) {
+    height: 110px;
+  }
+@media (min-width: @desktop-width) {
+    height: 110px;
+  }
+}
+
+.main-nav__list, //в шапке пробел полосой убирает
+.user__slogan {
+  margin-top: 0;
+  margin-bottom: 0;
+}
