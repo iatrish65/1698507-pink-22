@@ -1,0 +1,55 @@
+@media (min-width: @tablet-width) {
+  .user__wrapper--competition {
+    display: flex;
+    justify-content: space-between;
+    width: 660px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .user__wrapper--competition {
+    width: 1200px;
+  }
+}
+
+@media (min-width: @mobile-width-only) { //работает в обратку!!! хочу скрыть часть текста
+.user__slogan__competition {
+  display: none;
+  }
+}
+
+.user__competition ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.info__user {
+  @media (min-width: @tablet-width) {
+    padding: 0 64px;
+  }
+  @media (min-width: @desktop-width) {
+    margin: auto;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+}
+
+
+@media (min-width: @tablet-width) {
+  .contact__info, .filter {
+    display: flex;
+    justify-content: space-between;
+    width: 660px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contact__info, .filter {
+    width: 1200px;
+  }
+}
+
