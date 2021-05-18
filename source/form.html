@@ -2,15 +2,18 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>проект "Пинк"</title>
-     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body class="page__body">
+    <!-- <div style="background-image: url('../img/dfoto/fon-desktop.jpg'); position: absolute; top; z-index: 2; width: 100%; height: 500px;"></div> -->
     <header class="page-header">
-      <a class="page-header__logo">PINK LOGO
+      <a class="page-header__logo">
         <img class="page-header__logo-image" src="img/logo.svg" width="74" height="23" alt="«Пинк»">
       </a>
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
@@ -46,51 +49,56 @@
     <main class="page-competition">
       <h1 class="visually-hidden">Страница формы</h1>
       <section class="user__competition">
-        <div class="user__wrapper">
+        <div class="user__wrapper--competition">
           <header class="user__header__competition">
             <h2 class="visually-hidden">Конкурс</h2>
             <p class="user__slogan__competition">
               Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:
             </p>
+            <p class="user__slogan__competition--mobile">
+              Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!
+            </p>
           </header>
         </div>
       </section>
-      <section class="user__competition name__info">
-            <h2 class="visually-hidden">Форма ввода данных</h2>
-        <form action="https://echo.htmlacademy.ru" method="post">
-          <ul>
-            <li>
-              <label for="last_name">фамилия:<br></label>
-              <input type="text" id="last_name" name="name__info" placeholder="Укажите фамилию *"><br>
-            </li>
-            <li>
-              <label for="first_name">имя:<br></label>
-              <input type="text" id="first_name" name="name__info" placeholder="Введите ваше имя *"><br>
-            </li>
-            <li>
-              <label for="middle_name">отчество:<br></label>
-              <input type="text" id="middle_name" name="name__info" placeholder="Ну и отчество тоже"><br>
-            </li>
-          </ul>
-        </form>
-      </section>
-      <fieldset>
-            <legend class="filter-heading">с каким приложением путешествовали?</legend>
-            <ul>
-              <li class="filter-option filter-radio">
-                <input class="visually-hidden filter-input-radio filter-input" type="radio" name="application" value="application-ios" id="filter-application-ios">
-                <label for="filter-application-ios">Pink для iOS</label>
-              </li>
-              <li class="filter-option filter-radio">
-                <input class="visually-hidden filter-input-radio filter-input" type="radio" name="application" value="application-android" id="filter-application-android">
-                <label for="filter-application-android">Pink на Android</label>
-              </li>
-              <li class="filter-option filter-radio">
-                <input class="visually-hidden filter-input-radio filter-input" type="radio" name="application" value="application-windows" id="filter-application-windows">
-                <label for="filter-application-windows">Windows Phone</label>
-              </li>
-            </ul>
-      </fieldset>
+        <section class="user__competition info__user">
+          <section class="name__info">
+                <h2 class="visually-hidden">Форма ввода данных</h2>
+            <form action="https://echo.htmlacademy.ru" method="post">
+              <ul>
+                <li>
+                  <label for="last_name">фамилия:<br></label>
+                  <input type="text" id="last_name" name="name__info" placeholder="Укажите фамилию *"><br>
+                </li>
+                <li>
+                  <label for="first_name">имя:<br></label>
+                  <input type="text" id="first_name" name="name__info" placeholder="Введите ваше имя *"><br>
+                </li>
+                <li>
+                  <label for="middle_name">отчество:<br></label>
+                  <input type="text" id="middle_name" name="name__info" placeholder="Ну и отчество тоже"><br>
+                </li>
+              </ul>
+            </form>
+          </section>
+          <fieldset class="telephone">
+                <legend class="filter-heading">с каким приложением путешествовали?</legend>
+                <ul>
+                  <li class="filter-option filter-radio">
+                    <input class="visually-hidden filter-input-radio filter-input" type="radio" name="application" value="application-ios" id="filter-application-ios">
+                    <label for="filter-application-ios">Pink для iOS</label>
+                  </li>
+                  <li class="filter-option filter-radio">
+                    <input class="visually-hidden filter-input-radio filter-input" type="radio" name="application" value="application-android" id="filter-application-android">
+                    <label for="filter-application-android">Pink на Android</label>
+                  </li>
+                  <li class="filter-option filter-radio">
+                    <input class="visually-hidden filter-input-radio filter-input" type="radio" name="application" value="application-windows" id="filter-application-windows">
+                    <label for="filter-application-windows">Windows Phone</label>
+                  </li>
+                </ul>
+          </fieldset>
+        </section>
       <section class="user__competition contact__info">
         <h2 class="visually-hidden">Ввод контактной информации</h2>
         <form action="https://echo.htmlacademy.ru" method="post">
@@ -109,7 +117,7 @@
           </fieldset>
         </form>
       </section>
-        <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+        <form class="user__competition filter" method="get" action="https://echo.htmlacademy.ru">
           <fieldset>
             <legend class="filter-heading">ваши безбашенные достижения в путешествии</legend>
             <ul>
@@ -140,7 +148,7 @@
             </ul>
           </fieldset>
         </form>
-          <section>
+          <section class="user__competition emotion">
             <h2 class="visually-hidden">Ввод эмоций от отдыха</h2>
             <fieldset>
               <legend class="filter-heading">опишите свои эмоции</legend>
@@ -152,7 +160,7 @@
               </ul>
             </fieldset>
           </section>
-          <section>
+          <section class="user__competition sending">
               <h2 class="visually-hidden">Отправка данных</h2>
               <button class="checkout button" type="submit">отправить форму</button>
               <p class="footnote">
