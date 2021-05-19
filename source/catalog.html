@@ -2,15 +2,18 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>проект "Пинк"</title>
-     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body class="page__body">
+    <!-- <div style="background-image: url('../img/dfoto/fon-desktop.jpg'); position: absolute; top; z-index: 2; width: 100%; height: 500px;"></div> -->
     <header class="page-header">
-      <a class="page-header__logo">PINK LOGO
+      <a class="page-header__logo">
         <img class="page-header__logo-image" src="img/logo.svg" width="74" height="23" alt="«Пинк»">
       </a>
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
@@ -46,7 +49,7 @@
       <main class="page-foto">
         <h1 class="visually-hidden">Страница фото</h1>
         <section class="user__foto">
-          <div class="user__wrapper">
+          <div class="foto__wrapper">
             <header class="user__header__foto">
               <h2 class="visually-hidden">Фото</h2>
               <p class="user__slogan__foto">
@@ -54,7 +57,7 @@
               </p>
                 <div class="user__main__foto">
                   <figure>
-                    <img
+                    <img class="main__foto"
                     src="img/mfoto/mpanorama.jpg"
                     alt="Фото Анны Банджи-джа́мпинг">
                     <p>Панорама дня</p>
@@ -64,7 +67,7 @@
                   </figure>
                 </div>
 
-                <div class="user__gallery__foto">
+              <div class="user__gallery__foto">
                   <figure>
                     <img
                     src="img/mfoto/mavto.jpg"
@@ -85,7 +88,7 @@
 
                   <figure>
                     <img
-                    src="img/mfoto/mbaraban.jpg"
+                    src="img/mfoto/mwindow.jpg"
                     alt="Фото Борис Витраж">
                     <p>Борис (20 часов назад)</p>
                     <figcaption>Здесь могла быть ваша цитата о высоком и вечном.</figcaption>
@@ -118,64 +121,65 @@
                     <figcaption>Всем GM и взаимные лайки!</figcaption>
                     <p>нравиться: 4</p> <img src="img/icon/heart.svg">
                   </figure>
-                </div>
-                <div class="user__uploud__foto">
-                  <p class="user__slogan__foto">
-                  Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!
-                  </p>
-                  <figure>
-                    <img src="img/mfoto/mroud.jpg" alt="Фото зимняя дорога">
-                  </figure>
-                </div>
-            </header>
-        <div class="catalog-filter">
-          <h1 class="visually-hidden">Обработка фотографий</h1>
-          <section class="filter">
-              <fieldset class="filter-item">
-                  <legend>группировка:</legend>
-                  <img src="img/icon/mcrop.svg">
-                  <div class="range-filter">
-                    <div class="range-controls">
-                      <div class="scale">
-                        <div class="bar"></div>
-                      </div>
-                      <div class="toggle toggle-min" tabindex="0"></div>
-                      <div class="toggle toggle-max" tabindex="0"></div>
-                    </div>
-                  </div>
-              </fieldset>
-              <fieldset class="filter-item">
-                  <legend>заливка:</legend>
-                  <img src="img/icon/mfill.svg">
-                  <div class="range-filter">
-                    <div class="range-controls">
-                      <div class="scale">
-                        <div class="bar"></div>
-                      </div>
-                      <div class="toggle toggle-min" tabindex="0"></div>
-                      <div class="toggle toggle-max" tabindex="0"></div>
-                    </div>
-                  </div>
-              </fieldset>
-              <fieldset class="filter-item">
-                  <legend>контраст:</legend>
-                  <img src="img/icon/mcontrast.svg">
-                  <div class="range-filter">
-                    <div class="range-controls">
-                      <div class="scale">
-                        <div class="bar"></div>
-                      </div>
-                      <div class="toggle toggle-min" tabindex="0"></div>
-                      <div class="toggle toggle-max" tabindex="0"></div>
-                    </div>
-                  </div>
-              </fieldset>
-              <div>
-                  <button class="button">Запостить</button>
-                  <button class="button">Отмена</button>
               </div>
-          </section>
-        </div>
+
+                    <p class="user__slogan__foto">
+                    Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!
+                    </p>
+                  <div class="user__uploud__foto">
+                    <figure>
+                      <img src="img/mfoto/mroud.jpg" alt="Фото зимняя дорога">
+                    </figure>
+                    <div class="catalog-filter">
+                      <h1 class="visually-hidden">Обработка фотографий</h1>
+                        <section class="filter">
+                          <fieldset class="filter-item">
+                              <legend>группировка:</legend>
+                              <img src="img/icon/mcrop.svg">
+                              <div class="range-filter">
+                                <div class="range-controls">
+                                  <div class="scale">
+                                    <div class="bar"></div>
+                                  </div>
+                                  <div class="toggle toggle-min" tabindex="0"></div>
+                                  <div class="toggle toggle-max" tabindex="0"></div>
+                                </div>
+                              </div>
+                          </fieldset>
+                          <fieldset class="filter-item">
+                              <legend>заливка:</legend>
+                              <img src="img/icon/mfill.svg">
+                              <div class="range-filter">
+                                <div class="range-controls">
+                                  <div class="scale">
+                                    <div class="bar"></div>
+                                  </div>
+                                  <div class="toggle toggle-min" tabindex="0"></div>
+                                  <div class="toggle toggle-max" tabindex="0"></div>
+                                </div>
+                              </div>
+                          </fieldset>
+                          <fieldset class="filter-item">
+                              <legend>контраст:</legend>
+                              <img src="img/icon/mcontrast.svg">
+                              <div class="range-filter">
+                                <div class="range-controls">
+                                  <div class="scale">
+                                    <div class="bar"></div>
+                                  </div>
+                                  <div class="toggle toggle-min" tabindex="0"></div>
+                                  <div class="toggle toggle-max" tabindex="0"></div>
+                                </div>
+                              </div>
+                          </fieldset>
+                          <div>
+                              <button class="button">Запостить</button>
+                              <button class="button">Отмена</button>
+                          </div>
+                        </section>
+                    </div>
+                  </div>
+            </header>
       </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
