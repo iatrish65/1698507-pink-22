@@ -1,5 +1,7 @@
 .stats__table {
-// background: @basic-bgc-photo;
+  background: @basic-border;
+  color: @basic-color-text;
+    padding: 28px 20px;
 
   display: block;
 .table__tariff__cell, .table__tariff__cell1, .table__tariff__cell3,
@@ -21,11 +23,9 @@
   }
 }
 
-
 .table__tariff__cell {
-  background: @basic-color-text;
-  color: @basic-white;
-  margin: 0;
+  background: @basic-border;
+
 }
 
 .table__tariff__units {
@@ -36,3 +36,38 @@
   margin: 0;
 }
 
+.table__tariff__cell1, .table__tariff__cell2, .table__tariff__cell3 {
+  background: @basic-color-text;
+  color: @basic-white;
+  width: 233px;
+  height: 94px;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 1;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.table__tariff__units {
+  background: @basic-white;
+  color: @basic-color-text;
+  width: 234px;
+  height: 59px;
+  text-align: left;
+  text-transform: capitalize;
+  line-height: 1;
+  font-weight: Open Sans;
+  font-size: 18px;
+}
+
+.table__units1, .table__units2, .table__units3 {
+  background: @basic-white;
+  color: @basic-red;
+  width: 233px;
+  height: 59px;
+  text-align: center;
+  //text-transform: capitalize;
+  line-height: 1;
+  //font-weight: Open Sans;
+  font-size: 27px;
+}
