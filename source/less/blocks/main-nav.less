@@ -24,16 +24,16 @@
     margin: 0 auto;
   }
 
-@media (min-width: @desktop-width) {
-.main-nav__toggle {
-    display: none;
-  }
-}
-}
-/* {
+//@media (min-width: @desktop-width) {
+//.main-nav__toggle {
+//    display: none;
+//  }
+//}
+//}
+// {
 .main-nav__wrapper {
     width: 1200px;
-  }*/
+  }
 //}
 
 .main-nav__toggle {
@@ -52,7 +52,7 @@
   &:active {
     background-color: @basic-color-text;
   }
-  @media (min-width: @tablet-width) {
+  @media (min-width: @desktop-width) {
     display: none;
   }
 
@@ -169,4 +169,5 @@
   &:active::after {
     background-color: fade(@basic-white, 30%);
   }
+}
 }

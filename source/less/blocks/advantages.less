@@ -1,60 +1,60 @@
 .advantages__list {
-  margin: 0;
-  padding: 0;
+  margin: 0 auto;
+  //padding: 0 20px;
   list-style: none;
+  background-color: @basic-bgc-photo;
 }
 
 .advantages__wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 40px 20px;
+  text-align: center;
+  padding: 0 20px;
   box-sizing: border-box;
-}
-
-
-
-@media (min-width: @tablet-width) {
-  .advantages__wrapper {
-    //display: flex;
-    //justify-content: space-between;
-    //align-items: center;
-    width: 660px;
-    margin: 0 auto;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .advantages__wrapper {
-    width: 1200px;
-  }
-}
-
-.news__wrapper {
-  @media (min-width: @tablet-width) {
-    padding: 0 64px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-
-  @media (min-width: @desktop-width) {
-    margin: auto;
-    max-width: 960px;
-
-  }
 }
 
 .advantages__list--text {
   background-color: @basic-white;
   color: @basic-color-text;
-
   text-align: center;
   text-transform: uppercase;
   line-height: 1;
-
-  //font-size: 24px;
+  font-size: 24px;
 }
 
 .advantages__list {
+  display: flex;
+  min-height: 100%;
+  flex-direction: row;
+}
 
+@media (max-width: @mobile-width-only) {
+  .advantages__list {
+    flex-direction: column;
+
+  }
+  .advantages__list .advantages__item--iPhone1 img ,
+  .advantages__item--iPhone2 img {
+    display: none;
+  }
+  .advantages__item--iPhone3 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+      .advantages__title {
+        order: -2;
+        }
+      .advantages__description {
+        order: -1;
+        }
+  }
+}
+
+@media (max-width: @desktop-width) {
+  .advantages__list .advantages__item--iPhone1 img ,
+  .advantages__item--iPhone2 img {
+    display: none;
+  }
 }
