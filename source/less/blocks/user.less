@@ -1,3 +1,30 @@
+.user__wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.user__list {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0;
+}
+
+.user__log {
+  max-width: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.user__slogan {
+  font-size: 50px;
+  line-height: 68px;
+  text-align: center;
+  font-weight: normal;
+}
+
 .user {
   margin: 0;
   padding: 0;
@@ -7,27 +34,46 @@
 .user__button {
   background-color: @basic-bgc-promo;
   color: @basic-white;
+  border:3px solid @basic-white;
+  border-radius: 29px;
+  padding: 10px 15px;
 }
 
 .user__item {
   list-style: none;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .user__item a {
   color: @basic-white;
 }
 
+.hand-logo {
+  margin-top: auto;
+}
+
+.user__header {
+   //@media (min-width: @tablet-width) {
+    //order: 1;
+    //width: 100%;
+    background-color: @basic-modal-shadow;
+    //background-image: url("..img/mfoto/hand-mobile.png");
+    //height: 500px;
+  }
+
+
 @media (min-width: @tablet-width) {
-  .user__wrapper {
-    display: grid;
-    //justify-content: space-between;
+  //.user__wrapper {
+    //display: flex;
+    //justify-content: space-around;
+
     //width: 660px;
     margin: 0 auto;
   }
 
 @media (min-width: @desktop-width) {
-.user__wrapper {
-    width: 1200px;
+//.user__wrapper {
+   // width: 1200px;
   }
-}
-}
+//}
